@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta "charset=utf-8"/>
+        <title>Calculate your BMI</title>
+    </head>
+    
+    <body>
+        <div id="container">
+            <form name="bmiForm">
+                <div class="outter-area">
+                    <div class="count-inputs">
+                        <input type="number" class="count" placeholder="Height(cm)" name="height" step="1" min="0" max="200">
+                        <br>
+                        <br>
+                        <input type="number" class="count" placeholder="Weight(kg)" name="weight" step="1" min="0" max="250">
+                    </div>
+                    <input type="button" id="calc-btn" value="Calculate BMI" onClick="calculateBmi()">                
+                </div>
+                
+                <div id="title-box">
+                    <h1 class="title-text">Body Mass Index</h1>
+                    <h4 class="todo-text">Calculate Your BMI.</h4>
+                    <h6 class="my-text">@Abbas Manning</h6>
+                </div>
+                <div id="result-box">
+                    <div class="inner-area">
+                        <div id="result-inputs">
+                            <input type="text" class="result" placeholder="BMI" name="bmi">
+                            <br>
+                            <br>
+                            <input type="text" class="result" placeholder="BMI Index" name="meaning">
+                        </div>
+                            <input type="reset" id="reset-btn" value="Reset" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="index.js" charset="utf-8"></script>
+        </footer>
+    </body>
+</html>
